@@ -11,12 +11,13 @@ public class ArrayController
 	public ArrayController()
 	{
 		myPlayer = new Player[3][3];
+		setupArray();
 		baseFrame = new ArrayFrame(this);
 	}
 	
 	public void start()
 	{
-		setupArray();
+		
 	}
 	
 	private void setupArray()
