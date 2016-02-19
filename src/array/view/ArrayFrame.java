@@ -19,7 +19,7 @@ public class ArrayFrame extends JFrame
 	
 	private void setupFrame()
 	{
-		this.setSize(500, 500);
+		this.setSize(1000, 350);
 		this.setContentPane(basePanel);
 		this.setTitle("My 2D Project");
 		this.setVisible(true);
