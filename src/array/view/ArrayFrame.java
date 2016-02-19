@@ -1,9 +1,27 @@
 package array.view;
 
-public class ArrayFrame
+import javax.swing.JFrame;
+
+import array.controller.ArrayController;
+
+public class ArrayFrame extends JFrame
 {
-	public ArrayFrame()
+	private ArrayController baseController;
+	private ArrayPanel basePanel;
+	
+	public ArrayFrame(ArrayController baseController)
 	{
+		this.baseController = baseController;
+		basePanel = new ArrayPanel(baseController);
 		
+		setupFrame();
+	}
+	
+	private void setupFrame()
+	{
+		this.setSize(500, 500);
+		this.setContentPane(basePanel);
+		this.setTitle("My 2D Project");
+		this.setVisible(true);
 	}
 }
